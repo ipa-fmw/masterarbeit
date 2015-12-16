@@ -11,7 +11,7 @@
 
     <!-- Node for publishing the minimal distance to obstacles -->
     <rosparam command="load" file="$(find cob_grasping_app)/config/$(arg robot)/robot_config.yaml" ns="obstacle_distance_node"/>
-    <node name="obstacle_distance_node" output="screen" pkg="atf_recorder_plugins" type="obstacle_distance_node"/>
+    <node name="obstacle_distance_node" output="screen" pkg="obstacle_distance" type="obstacle_distance_node"/>
 
     <!-- Testsuite params -->
     <param name="test_name" value="ts3_t1"/>

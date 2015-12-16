@@ -1,6 +1,19 @@
 test_1:
   all:
     time:
+    publish_rate:
+      topics:
+        - "/tf"
+        - "/test"
+      hz:
+        - 300
+        - 100
+      error:
+        - 10
+        - 10
+    interface:
+      timeout: 10
+      publisher: ["test", "test2"]
   test1:
     time:
     path_length:

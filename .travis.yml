@@ -41,6 +41,7 @@ install:
   - git clone https://github.com/ipa320/cob_manipulation.git
   - rosdep update
   - git clone https://github.com/koellsch/atf.git
+  - git clone https://github.com/koellsch/obstacle_distance.git
 
   # Use rosdep to install all dependencies (including ROS itself)
   - rosdep install --from-paths ./ -i -y --rosdistro $CI_ROS_DISTRO

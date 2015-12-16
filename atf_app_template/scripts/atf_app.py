@@ -1,12 +1,12 @@
 #!/usr/bin/python
-import rospy
 import unittest
+import yaml
+from subprocess import call
+
+import rospy
 import rostest
 import rostopic
-import yaml
-
 from atf_recorder import RecordingManager
-from subprocess import call
 
 
 class AtfApp:

@@ -1,15 +1,15 @@
 #!/usr/bin/env python
 import math
-import rospy
+import sys
 import unittest
+import yaml
+from subprocess import call
+
+import rospy
 import rostest
 import rostopic
-import yaml
-
-from tf import transformations, TransformListener, TransformBroadcaster
 from atf_recorder import RecordingManager
-from atf_msgs.msg import *
-from subprocess import call
+from tf import transformations, TransformListener, TransformBroadcaster
 
 
 class PublishTf:

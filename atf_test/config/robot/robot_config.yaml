@@ -2,8 +2,8 @@ path_length:
   topics:
     - "/tf"
 obstacle_distance:
-  topics:
-    - "/atf/obstacle_distance"
+  services:
+    - "/atf/get_obstacle_distance"
   robot_description: ""
 robot_bringup_launch: ""
 wait_for_topics: []

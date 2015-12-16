@@ -7,6 +7,28 @@ test_1:
       mem: [move_group, rostest]
       io: [move_group, rostest]
       network: [move_group, rostest]
+    publish_rate:
+      topics:
+        - "/tf"
+        - "/test"
+      hz:
+        - 300
+        - 100
+      error:
+        - 10
+        - 10
+    interface:
+      timeout: 10
+      publisher: ["topic"]
+      subscriber: [{
+        topic: "",
+        class: ""
+      }]
+      services: ["name"]
+      actions: [{
+        topic: "",
+        class: ""
+      }]
 
   execution:
     time:
